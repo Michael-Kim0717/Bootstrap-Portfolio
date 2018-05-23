@@ -1,0 +1,126 @@
+/* Navigation Bar */
+
+a {
+    color: #777777;
+}
+
+h1 {
+    color: white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.navbar-header {
+    background-color: #4aaaa5;
+    height: 65px;
+}
+
+.navbar-list {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.navbar-li {
+    display: inline;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 0px 10px;
+    position: relative;
+    left: -17px;
+}
+
+/* Body */
+
+body {
+    background-color: lightgray;
+}
+
+h3 {
+    color: #4aaaa5;
+}
+
+p {
+    color: #777777;
+    font-size: 14px;
+    padding: 0px 30px;
+}
+
+.box-line {
+    padding-top: 5px;
+}
+
+.container.content-box {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* index.html */
+
+@media only screen and (min-width: 640px){
+    .profile-pic {
+        float: left;
+        width: 100%;
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .profile-pic {
+        float: left;
+        width: 50%;
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (min-width: 980px){
+    .profile-pic {
+        float: left;
+        width: 33%;
+        padding: 20px 0px;
+    }
+}
+
+/* portfolio.html */
+
+figcaption {
+    text-align: center;
+}
+
+.pf-image {
+    margin: 10px;
+    width: 100%;
+}
+
+/* contact.html */
+
+input {
+    width: 100%;
+}
+
+textarea {
+    height: 250px;
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #666666;
+}
+
+h6 {
+    color: white;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    margin-bottom: -10px;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+}
+
+.footer-line {
+    border-bottom: 4px solid #4aaaa5;
+}
