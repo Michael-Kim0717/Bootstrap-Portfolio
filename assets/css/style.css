@@ -12,6 +12,11 @@ h1 {
     text-align: center;
 }
 
+.col-md-1 {
+    background-color: #ffffff;
+    border-bottom: 3px solid #cccccc;
+}
+
 .navbar-header {
     background-color: #4aaaa5;
     height: 65px;
@@ -19,7 +24,7 @@ h1 {
 
 .navbar-list {
     background-color: #ffffff;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
     padding-top: 10px;
     text-align: center;
 }
@@ -33,10 +38,20 @@ h1 {
     left: -17px;
 }
 
+@media only screen and (min-width: 768px){
+    .navbar-header {
+        border-bottom: 3px solid #cccccc;
+    }
+
+    .navbar-list {
+        text-align: right;
+    }
+}
+
 /* Body */
 
 body {
-    background-color: lightgray;
+    background-color: #EAEDED;
 }
 
 h3 {
@@ -55,34 +70,17 @@ p {
 
 .container.content-box {
     background: white;
+    border: 2px solid #cccccc;
     border-radius: 5px;
     padding: 20px;
 }
 
 /* index.html */
 
-@media only screen and (min-width: 640px){
-    .profile-pic {
-        float: left;
-        width: 100%;
-        padding: 20px 0px;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .profile-pic {
-        float: left;
-        width: 50%;
-        padding: 20px 0px;
-    }
-}
-
-@media only screen and (min-width: 980px){
-    .profile-pic {
-        float: left;
-        width: 33%;
-        padding: 20px 0px;
-    }
+.profile-pic {
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
 }
 
 /* portfolio.html */
