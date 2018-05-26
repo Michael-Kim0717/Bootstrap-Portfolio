@@ -78,18 +78,23 @@ h3 {
     padding: 20px;
 }
 
-/* index.html */
 
-.profile-pic {
-    float: left;
-    width: 100%;
-    padding: 20px 15px;
-}
+/* index.html */
 
 p {
     color: #777777;
     font-size: 14px;
-    padding: 0px 30px;
+    padding: 0px 15px;
+}
+
+.first-p {
+    padding-top: 20px;
+}
+
+.profile-pic {
+    float: left;
+    max-width: 100%;
+    padding: 20px 15px;
 }
 
 /* portfolio.html */
