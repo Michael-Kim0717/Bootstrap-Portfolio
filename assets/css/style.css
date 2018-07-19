@@ -1,5 +1,62 @@
 /* General */
 
+.one {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+.one h3 {
+    color: white;
+}
+
+.one h4 {
+    color: white;
+}
+
+.one p {
+    color: white;
+}
+
+.two {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.two h3 {
+    color: black;
+}
+
+.two h4 {
+    color: black;
+}
+
+.two h5 {
+    color: black;
+}
+
+h3 {
+    padding: 30px;
+}
+
+/* Header */
+
+.header {
+    background-image: url("../images/header.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 80%;
+    height: 500px;
+}
+
+.header h1 {
+    letter-spacing: 0.2em;
+    padding-top: 100px;
+    text-align: center;
+    text-shadow: 0 0 15px white;
+}
+  
 /* Navigation Banner */
 
 .nav-banner {
@@ -21,7 +78,8 @@ html, body {
 }
 
 .nav-screen {
-    background-color: aliceblue;
+    background-image: url("../images/nav-background.jpg");
+    background-size: cover;
     min-height: 100%;
     position: fixed;
     visibility: hidden;
@@ -32,13 +90,14 @@ html, body {
     height: 100px;
 }
 
-.row {
+.nav-row {
     padding-top: 80px;
 }
 
     /* 3 Icons */
 
     .fa {
+        color: white;
         font-size: 45px;
     }
 
@@ -48,6 +107,7 @@ html, body {
     }
 
 .nav-list-item {
+    color: white;
     font-size: 32px;
     letter-spacing: 0.15em;
     visibility: hidden;
@@ -70,6 +130,84 @@ html, body {
 
 /* Index.html */
 
-/* Contact.html */
+.intro {
+    padding: 30px;
+}
+
+.experience-bar {
+    box-shadow: 0 0 5px darkgray;
+}
+
+table {
+    padding: 30px;
+}
+
+td {
+    padding: 0 30px;
+}
 
 /* Portfolio.html */
+
+    /* Carousel */
+    .carousel {
+        border: 3px solid white;
+        border-radius: 5px;
+        margin: 30px 0px 30px 30px;
+    }
+
+    /* Project Cards */
+    #project-cards {
+        height: 500px;
+        margin-top: 30px;
+        overflow-y: scroll;
+    }
+
+    .card {
+        border: 3px solid white;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        background-color: darkslategray;
+        padding: 20px;
+    }
+
+    .card-title {
+        display: inline;
+    }
+
+    .platform-icon {
+        float: right;
+        width: 30px;
+    }
+
+/* Contact.html */
+
+.social-media {
+    padding-left: 25px;
+}
+
+.social-media a {
+    padding-right: 30px;
+}
+
+.social-media img {
+    padding-right: 10px;
+    width: 50px;
+}
+
+.contact-me-form {
+    padding: 30px;
+}
+
+#message-for-me {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+/* Footer */
+
+#copyright-symbol {
+    float: right;
+    padding: 30px;
+}
