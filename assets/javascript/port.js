@@ -6,18 +6,17 @@ $(document).ready(function(){
     /* Set widths of experience bars accordingly. 
        When icons and bars come on the page, animate accordingly.
     */
-    setTimeout(function(){
-        $(".language").addClass("fadeInLeft");
-
-        $("#htmlcss-bar").css("width", "85%");
-        $("#javascript-bar").css("width", "75%");
-        $("#jquery-bar").css("width", "70%");
-        $("#java-bar").css("width", "90%");
-        $("#android-bar").css("width", "85%");
-        $("#swift-bar").css("width", "40%");
-        $("#sql-bar").css("width", "55%");
-    }, 3000);
+    $(".percent-bar").viewportChecker({
+        classToAdd: 'visible slideInLeft',
+        offset: 100,
+        repeat: false
+    });
     $(".lang-icon").viewportChecker({
+        classToAdd: 'visible fadeInLeft',
+        offset: 100,
+        repeat: false
+    });
+    $(".language").viewportChecker({
         classToAdd: 'visible fadeInLeft',
         offset: 100,
         repeat: false
