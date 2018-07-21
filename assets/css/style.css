@@ -8,6 +8,7 @@
 
 .one h3 {
     color: white;
+    font-size: 2vw;
 }
 
 .one h4 {
@@ -16,6 +17,7 @@
 
 .one p {
     color: white;
+    font-size: 1.25vw;
 }
 
 .two {
@@ -26,6 +28,7 @@
 
 .two h3 {
     color: black;
+    font-size: 2.5vw;
 }
 
 .two h4 {
@@ -51,6 +54,7 @@ h3 {
 }
 
 .header h1 {
+    font-size: 5vw;
     letter-spacing: 0.2em;
     padding-top: 100px;
     text-align: center;
@@ -146,6 +150,7 @@ html, body {
     }
 
     .language {
+        font-size: 1.75vw;
         visibility: hidden;
     }
 
@@ -206,7 +211,11 @@ html, body {
 
     .card {
         border: 1px solid white;
-        margin: 20px;
+        margin: 10px 0px;
+    }
+
+    .card:hover {
+        box-shadow: 0 0 30px whitesmoke;
     }
 
     .card-text {
@@ -229,6 +238,10 @@ html, body {
     }
 
 /* Contact.html */
+
+input {
+    width: 100%;
+}   
 
 .social-media {
     margin-left: 25px;
@@ -258,3 +271,71 @@ html, body {
     float: right;
     padding: 30px;
 }
+
+/* Media Queries */
+
+    /* SMALL */
+    @media (min-width: 576px) {
+        .two {
+            background-color: rgba(255, 0, 0, 0.486)
+        }
+
+        /* Experience */
+        .experience-bar {
+            width: 300px;
+        }
+
+        /* Contact */
+        .individ-sm {
+            display: inline-block;
+            padding-right: 20px;
+        }
+
+        .sm-link {
+            display: none;
+        }
+    }
+
+    /* MEDIUM */
+    @media (min-width: 768px) {
+        .two {
+            background-color: rgba(43, 255, 0, 0.486)
+        }
+
+        /* Experience */
+        .experience-bar {
+            width: 400px;
+        }
+
+        /* Contact */
+        .sm-link {
+            display: inline;
+        }
+
+        .social-media img {
+            width: 40px;
+        }
+
+        .social-media a {
+            font-size: 1.68vw;
+        }
+    }
+
+    /* LARGE */
+    @media (min-width: 992px) {
+        .two {
+            background-color: rgba(0, 68, 255, 0.486)
+        }
+
+        /* Experience */
+        .experience-bar {
+            width: 500px;
+        }
+    }
+
+    /* EX-LARGE */
+    @media (min-width: 1200px) {
+        .two {
+            background-color: rgba(68, 68, 68, 0.486)
+        }
+    }

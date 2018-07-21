@@ -35,24 +35,24 @@
         <div class="container-fluid one content" id="about">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="text-right"> ABOUT ME </h3>
+                    <h3 class="text-right animated invisible" id="about-me"> ABOUT ME </h3>
                     <br>
                 </div>
-                <div class="col-lg-6 intro">
-                    <p class="first-p intro-p"> Hello, thank you for visiting my page! :) </>
-                    <p class="intro-p"> 
+                <div class="col-sm-12 col-md-10 col-lg-8 intro animated invisible">
+                    <p class="first-p"> Hello, thank you for visiting my page! :) </>
+                    <p> 
                         My name is Michael Kim.
                         I graduated from Rutgers University in 2017 with a Bachelor's in Computer Science.
                         While in school, I have been studying mobile development with the intentions of becoming a software developer.
                     </p>
-                    <p class="intro-p">
+                    <p>
                         Aside from programming, I am also a 3rd degree black belt, aspiring baker, and Sunday school teacher.
                         When I was young, I always had a love for cooking (even though I knew nothing of it) and astronomy.
                         As of now, my recent passion has just been seeing things come together.
                         Whether it has been projects, creation of a dish, event planning coming to life, or even a simple 1000-piece puzzle set, I highly enjoyed the process.
                         Just being able to see the fruits of labor come to life has been my most recent joy center.
                     </p>
-                    <p class="intro-p">
+                    <p>
                         Some of my future goals are traveling the world, becoming a good chef, and learning some acrobatics.
                     </p>
                     <!-- <h4 class="text-left"> I am a(n) . . . </h4>
@@ -72,7 +72,7 @@
 
         <!-- EXPERIENCE -->
         <div class="container-fluid two content" align="right"> 
-            <h3 class="text-left">
+            <h3 class="text-left animated invisible" id="experience">
                 EXPERIENCE
             </h3>
             <table>
@@ -86,7 +86,7 @@
                     <td>
                         <div class="experience-bar" style="background-color: darkgray;
                                     border: 1px solid black; 
-                                    width: 500px; height: 10px;">
+                                    height: 10px;">
                             <div class="percent-bar animated invisible" id="htmlcss-bar" style="height: 8px; 
                                         width: 85%; 
                                         background-color: white;">
@@ -104,7 +104,7 @@
                     <td>
                         <div class="experience-bar" style="background-color: darkgray;
                                 border: 1px solid black; 
-                                width: 500px; height: 10px;">
+                                height: 10px;">
                             <div class="percent-bar animated invisible" id="javascript-bar" style="height: 8px; 
                                         width: 75%; 
                                         background-color: white;">
@@ -122,7 +122,7 @@
                     <td>
                         <div class="experience-bar" style="background-color: darkgray;
                                 border: 1px solid black; 
-                                width: 500px; height: 10px;">
+                                height: 10px;">
                             <div class="percent-bar animated invisible" id="jquery-bar" style="height: 8px; 
                                         width: 70%; 
                                         background-color: white;">
@@ -140,7 +140,7 @@
                     <td>
                         <div class="experience-bar" style="background-color: darkgray;
                                 border: 1px solid black; 
-                                width: 500px; height: 10px;">
+                                height: 10px;">
                             <div class="percent-bar animated invisible" id="java-bar" style="height: 8px; 
                                         width: 90%; 
                                         background-color: white;">
@@ -158,7 +158,7 @@
                     <td>
                         <div class="experience-bar" style="background-color: darkgray;
                                 border: 1px solid black; 
-                                width: 500px; height: 10px;">
+                                height: 10px;">
                             <div class="percent-bar animated invisible" id="android-bar" style="height: 8px; 
                                         width: 85%; 
                                         background-color: white;">
@@ -176,7 +176,7 @@
                     <td>
                         <div class="experience-bar" style="background-color: darkgray;
                                 border: 1px solid black; 
-                                width: 500px; height: 10px;">
+                                height: 10px;">
                             <div class="percent-bar animated invisible" id="swift-bar" style="height: 8px; 
                                         width: 40%; 
                                         background-color: white;">
@@ -194,7 +194,7 @@
                     <td>
                         <div class="experience-bar" style="background-color: darkgray;
                                 border: 1px solid black; 
-                                width: 500px; height: 10px;">
+                                height: 10px;">
                             <div class="percent-bar animated invisible" id="sql-bar" style="height: 8px; 
                                         width: 55%; 
                                         background-color: white;">
@@ -207,20 +207,23 @@
 
         <!-- PORTFOLIO -->
         <div class="container-fluid one content" id="projects">
-            <h3 class="text-right">
+            <h3 class="text-right animated invisible" id="portfolio">
                 PORTFOLIO
             </h3>
             <div class="row">
-                <div class="col-4" id="project-cards">
-                    <div class="card" data="geography-hangman">
-                        <img class="card-img" src="./assets/images/word-guess-game.png">
-                        <div class="card-img-overlay">
-                            <h4 class="card-title"> Geography Hangman </h4>
-                            <img class="platform-icon" src="./assets/images/browser.png">
+                <div class="col-sm-12 col-md-8">
+                    <div id="project-pic-carousel" class="carousel slide animated invisible" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h4> Select a project to view. </h4>
+                            </div>
                         </div>
-                        <p class="card-text"> A game created with simple Javascript that requires the user to guess from 83 countries (and one continent). </p>
                     </div>
-
+                </div>
+                
+                <div class="offset-sm-1 col-sm-10 offset-md-0 col-md-4 animated invisible" id="project-cards">
                     <div class="card" data="speed-trivia">
                         <img class="card-img" src="./assets/images/speed-trivia.png">
                         <div class="card-img-overlay">
@@ -237,16 +240,13 @@
                         </div>
                         <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ratione ea saepe a quis tenetur ipsam natus, fugit repellendus laborum ut cum aperiam molestias? Exercitationem deleniti culpa non tenetur labore? </p>
                     </div>
-                </div>
-                <div class="col-8">
-                    <div id="project-pic-carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <h4> Select a project to view. </h4>
-                            </div>
+                    <div class="card" data="geography-hangman">
+                        <img class="card-img" src="./assets/images/word-guess-game.png">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"> Geography Hangman </h4>
+                            <img class="platform-icon" src="./assets/images/browser.png">
                         </div>
+                        <p class="card-text"> A game created with simple Javascript that requires the user to guess from 83 countries (and one continent). </p>
                     </div>
                 </div>
             </div>
@@ -256,33 +256,39 @@
         <div class="container-fluid two content" id="contact-me">
             <div class="row">
                 <div class="col-lg-12">
-                <h3 class="text-left"> SEND ME A MESSAGE :) </h3>
+                <h3 class="text-left animated invisible" id="contact-header"> SEND ME A MESSAGE :) </h3>
                 </div>
             </div>
-            <div class="social-media">
-                <img class="github" src="./assets/images/github.png">
-                <a href="https://github.com/Michael-Kim0717"> /Michael-Kim0717 </a>
-                <img class="gmail" src="./assets/images/gmail.png">
-                <a> MichaelKim0717@gmail.com </a>
-                <img class="linkedin" src="./assets/images/linkedin.png">
-                <a href="https://www.linkedin.com/in/michael-kim0717/"> /Michael-Kim0717 </a>
+            <div class="social-media animated invisible">
+                <div class="individ-sm">
+                    <img class="github" src="./assets/images/github.png">
+                    <a class='sm-link' href="https://github.com/Michael-Kim0717"> /Michael-Kim0717 </a>    
+                </div>
+                <div class="individ-sm">
+                    <img class="gmail" src="./assets/images/gmail.png">
+                    <a class='sm-link'> MichaelKim0717@gmail.com </a>        
+                </div>
+                <div class="individ-sm">
+                    <img class="linkedin" src="./assets/images/linkedin.png">
+                    <a class='sm-link' href="https://www.linkedin.com/in/michael-kim0717/"> /Michael-Kim0717 </a>    
+                </div>
             </div>
-            <div class="contact-me-form">
+            <div class="contact-me-form animated invisible">
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <input placeholder="Name">  </input>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <input placeholder="Email" type="email"> </input>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-sm-12 col-md-8 col-lg-6">
                         <textarea id="message-for-me" placeholder="Message" cols="40" rows="5" id="message"> </textarea>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-sm-4 col-md-3 col-lg-2">
                         <button class="btn btn-success"> SEND </button>
                     </div>
                 </div>

@@ -6,21 +6,41 @@ $(document).ready(function(){
     /* Set widths of experience bars accordingly. 
        When icons and bars come on the page, animate accordingly.
     */
-    $(".percent-bar").viewportChecker({
+    var slideInLeftObject = {
         classToAdd: 'visible slideInLeft',
         offset: 100,
+        repeat: false  
+    };
+    var slideInRightObject = {
+        classToAdd: 'visible slideInRight',
+        offset: 100,
         repeat: false
-    });
-    $(".lang-icon").viewportChecker({
+    };
+    var fadeInLeftObject = {
         classToAdd: 'visible fadeInLeft',
         offset: 100,
         repeat: false
-    });
-    $(".language").viewportChecker({
-        classToAdd: 'visible fadeInLeft',
-        offset: 100,
-        repeat: false
-    });
+    }
+
+        /* About Page */
+        $("#about-me").viewportChecker(slideInLeftObject);
+        $(".intro").viewportChecker(slideInRightObject);
+
+        /* Experience Page */
+        $("#experience").viewportChecker(slideInRightObject);
+        $(".percent-bar").viewportChecker(slideInLeftObject);
+        $(".lang-icon").viewportChecker(fadeInLeftObject);
+        $(".language").viewportChecker(fadeInLeftObject);
+
+        /* Portfolio Page */
+        $("#portfolio").viewportChecker(slideInLeftObject);
+        $("#project-cards").viewportChecker(slideInRightObject);
+        $("#project-pic-carousel").viewportChecker(slideInLeftObject);
+
+        /* Contact Page */
+        $("#contact-header").viewportChecker(slideInRightObject);
+        $(".social-media").viewportChecker(slideInRightObject);
+        $(".contact-me-form").viewportChecker(slideInRightObject);
 
     /* Whenever the dropdown menu is pressed */
     $("#dropdown-menu").on("click", function(){
@@ -71,7 +91,6 @@ $(document).ready(function(){
     /* Card on click */
     $(".card").on("click", function(){
         selectedProject = $(this).attr("data");
-        console.log(selectedProject);
         
         // Add indicators for what sliding page you are on.
         $(".carousel-indicators").html(
@@ -200,6 +219,7 @@ $(document).ready(function(){
             default :
                 break;
         }
+        
     });
 
 })
