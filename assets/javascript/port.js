@@ -222,4 +222,73 @@ $(document).ready(function(){
         
     });
 
+    /* On Navigation, when 'About', 'Portfolio', 'Contact' are clicked accordingly,
+        Pull up screen, and change window location.
+     */
+    $("#about-me-nav").on("click", function(){
+        $(".nav-screen").removeClass("fadeInDown");
+        $(".nav-screen").addClass("slideOutUp");
+
+        $(".about").removeClass("fadeInLeftBig");
+        $(".portfolio").removeClass("fadeInRightBig");
+        $(".contact").removeClass("fadeInLeftBig");
+        
+        $(".about").css("visibility", "hidden");
+        $(".portfolio").css("visibility", "hidden");
+        $(".contact").css("visibility", "hidden");
+        
+        window.setTimeout(function(){
+            $(".nav-screen").css("visibility", "hidden");
+            $("#dropdown-menu").css("display", "block");
+            $(".content").css("display", "block");
+            $(".footer").css("display", "block");
+            
+            window.location = "#about";
+        }, 1000);
+    });
+
+    $("#projects-nav").on("click", function(){
+        $(".nav-screen").removeClass("fadeInDown");
+        $(".nav-screen").addClass("slideOutUp");
+
+        $(".about").removeClass("fadeInLeftBig");
+        $(".portfolio").removeClass("fadeInRightBig");
+        $(".contact").removeClass("fadeInLeftBig");
+        
+        $(".about").css("visibility", "hidden");
+        $(".portfolio").css("visibility", "hidden");
+        $(".contact").css("visibility", "hidden");
+        
+        window.setTimeout(function(){
+            $(".nav-screen").css("visibility", "hidden");
+            $("#dropdown-menu").css("display", "block");
+            $(".content").css("display", "block");
+            $(".footer").css("display", "block");
+            
+            window.location = "#projects";
+        }, 1000);
+    });
+
+    $("#contact-me-nav").on("click", function(){
+        $(".nav-screen").removeClass("fadeInDown");
+        $(".nav-screen").addClass("slideOutUp");
+
+        $(".about").removeClass("fadeInLeftBig");
+        $(".portfolio").removeClass("fadeInRightBig");
+        $(".contact").removeClass("fadeInLeftBig");
+        
+        $(".about").css("visibility", "hidden");
+        $(".portfolio").css("visibility", "hidden");
+        $(".contact").css("visibility", "hidden");
+        
+        window.setTimeout(function(){
+            $(".nav-screen").css("visibility", "hidden");
+            $("#dropdown-menu").css("display", "block");
+            $(".content").css("display", "block");
+            $(".footer").css("display", "block");
+            
+            window.location = "#contact-me";
+        }, 1000);
+    });
+
 })
