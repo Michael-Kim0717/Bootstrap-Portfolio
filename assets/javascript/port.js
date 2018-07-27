@@ -216,6 +216,40 @@ $(document).ready(function(){
                     "</div>"
                 );
                 break;
+            case 'liri' :
+                $(".carousel-inner").append(
+                    "<div class='carousel-item active'>" +
+                        "<div class='row'>" +
+                            "<div class='col-12'>" +
+                                "<img class='project-ex-img' src='assets/images/liri-pics/movie-this.png'>" +
+                            "</div>" +
+                            "<div class='col-12'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-12'>" +
+                                "<img class='project-ex-img' src='assets/images/liri-pics/spotify-this.png'>" +
+                            "</div>" +
+                            "<div class='col-12'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"/*  +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-12'>" +
+                                "<img class='project-ex-img' src='assets/images/pokemon-rpg-pics/results-screen.png'>" +
+                            "</div>" +
+                            "<div class='col-12'>" +
+                                "<p class='project-ex-text'> Users will be able to see how many questions were correct, incorrect, and unanswered. Upon restarting the quiz, users will continuously be prompted with a set of 10 new questions. </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" */
+                );
+                break;
             default :
                 break;
         }

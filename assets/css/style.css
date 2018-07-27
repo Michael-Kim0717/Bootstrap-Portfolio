@@ -191,33 +191,47 @@ html, body {
         overflow-y: scroll;
     }
 
-    .card {
-        border: 1px solid white;
-        margin: 10px 0px;
-    }
+        /* For Regular Desktop Cards */
+        .card {
+            background-color: darkslategray;
+            border: 1px solid white;
+            margin: 10px 0px;
+        }
 
-    .card:hover {
-        box-shadow: 0 0 30px whitesmoke;
-    }
+        .card:hover {
+            box-shadow: 0 0 30px whitesmoke;
+        }
 
-    .card-text {
-        background-color: darkslategray;
-        padding: 20px;
-    }
+        .card-text {
+            background-color: darkslategray;
+            padding: 20px;
+        }
 
-    .card-title {
-        display: inline;
-        text-shadow: 0 0 10px black;
-    }
+        .card-title {
+            display: inline;
+            text-shadow: 0 0 10px black;
+        }
 
-    .platform-icon {
-        background-color: rgb(219, 219, 219);
-        border-radius: 50%;
-        box-shadow: 0 0 10px white;
-        float: right;
-        padding: 3px;
-        width: 30px;
-    }
+        .platform-icon {
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px white;
+            float: right;
+            margin-left: 10px;
+            padding: 3px;
+            width: 30px;
+        }
+
+        /* For Mobile Cards */
+        .card-img-bottom {
+            height: 20rem;
+            background: url("../images/placeholder-mobile.png") center no-repeat;
+            background-size: cover;
+        }
+
+        .mobile-text {
+            padding: 60px 20px 20px 20px;
+        }
 
 /* Contact.html */
 
@@ -312,6 +326,14 @@ input {
             text-align: center;
         }
 
+        .mobile-medium-card {
+            display: none;
+        }
+
+        .card-img-bottom {
+            height: 20rem;
+        }
+
         /* Contact */
         .individ-sm {
             display: inline-block;
@@ -372,6 +394,20 @@ input {
 
         .card p {
             font-size: 16px;
+        }
+
+        .mobile-medium-card {
+            display: block;
+        }
+
+        .mobile-card {
+            display: none;
+        }
+
+        .mobile-card-img {
+            display: block;
+            height: 15rem;
+            margin: 0 auto;
         }
 
         /* Contact */
@@ -438,6 +474,19 @@ input {
 
         .card p {
             font-size: 17px;
+        }
+
+        .mobile-card {
+            display: flex;
+        }
+
+        .mobile-medium-card {
+            display: none;
+        }
+
+        .card-img-bottom {
+            height: 20rem;
+            margin-top: 60px;
         }
 
         /* Contact */
