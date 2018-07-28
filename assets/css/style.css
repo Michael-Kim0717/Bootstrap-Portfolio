@@ -184,6 +184,11 @@ html, body {
         text-align: center;
     }
 
+    .mobile-ex-text {
+        margin-top: 50px;
+        text-align: center;
+    }
+
     /* Project Cards */
     #project-cards {
         height: 500px;
