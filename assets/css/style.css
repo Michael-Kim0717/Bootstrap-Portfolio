@@ -198,6 +198,10 @@ html, body {
             margin: 10px 0px;
         }
 
+        .card a {
+            color: white;
+        }
+
         .card:hover {
             box-shadow: 0 0 30px whitesmoke;
         }
@@ -225,7 +229,6 @@ html, body {
         /* For Mobile Cards */
         .card-img-bottom {
             height: 20rem;
-            background: url("../images/placeholder-mobile.png") center no-repeat;
             background-size: cover;
         }
 

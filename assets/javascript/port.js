@@ -216,6 +216,40 @@ $(document).ready(function(){
                     "</div>"
                 );
                 break;
+            case 'foogle' :
+                $(".carousel-inner").append(
+                    "<div class='carousel-item active'>" +
+                        "<div class='row'>" +
+                            "<div class='col-12'>" +
+                                "<img class='project-ex-img' src='assets/images/foogle-pics/tinder-page.png'>" +
+                            "</div>" +
+                            "<div class='col-12'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-12'>" +
+                                "<img class='project-ex-img' src='assets/images/foogle-pics/favorites.png'>" +
+                            "</div>" +
+                            "<div class='col-12'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"  +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-12'>" +
+                                "<img class='project-ex-img' src='assets/images/foogle-pics/details.png'>" +
+                            "</div>" +
+                            "<div class='col-12'>" +
+                                "<p class='project-ex-text'> lorem abc. </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"
+                );
+                break;
             case 'liri' :
                 $(".carousel-inner").append(
                     "<div class='carousel-item active'>" +
@@ -250,6 +284,128 @@ $(document).ready(function(){
                     "</div>" */
                 );
                 break;
+            case 'password-journal' :
+                $(".carousel-inner").append(
+                    "<div class='carousel-item active'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/password-pics/home.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/password-pics/details.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"  +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/password-pics/pin.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Users will be able to see how many questions were correct, incorrect, and unanswered. Upon restarting the quiz, users will continuously be prompted with a set of 10 new questions. </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"
+                );
+                break;
+            case 'BYG' :
+                $(".carousel-inner").append(
+                    "<div class='carousel-item active'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/byg-pics/announcements.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/byg-pics/directory.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"  +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/byg-pics/logs.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Users will be able to see how many questions were correct, incorrect, and unanswered. Upon restarting the quiz, users will continuously be prompted with a set of 10 new questions. </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/byg-pics/response-cards.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Users will be able to see how many questions were correct, incorrect, and unanswered. Upon restarting the quiz, users will continuously be prompted with a set of 10 new questions. </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"
+                );
+                break;
+            case 'budget-wallet' :
+                $(".carousel-inner").append(
+                    "<div class='carousel-item active'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/budget-pics/home.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/budget-pics/methods.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi! </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"  +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/budget-pics/transactions.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Users will be able to see how many questions were correct, incorrect, and unanswered. Upon restarting the quiz, users will continuously be prompted with a set of 10 new questions. </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='carousel-item'>" +
+                        "<div class='row'>" +
+                            "<div class='col-5'>" +
+                                "<img class='project-ex-img' src='assets/images/budget-pics/statistics.png'>" +
+                            "</div>" +
+                            "<div class='col-7'>" +
+                                "<p class='project-ex-text'> Users will be able to see how many questions were correct, incorrect, and unanswered. Upon restarting the quiz, users will continuously be prompted with a set of 10 new questions. </p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>"
+                );
+                break;    
             default :
                 break;
         }
