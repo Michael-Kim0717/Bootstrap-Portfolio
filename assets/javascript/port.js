@@ -20,7 +20,12 @@ $(document).ready(function(){
         classToAdd: 'visible fadeInLeft',
         offset: 100,
         repeat: false
-    }
+    };
+    var visibleObject = {
+        classToAdd: 'visible',
+        offset: 100,
+        repeat: false
+    };
 
     /* Objects for clicking on projects */
     var liri = {
@@ -120,6 +125,7 @@ $(document).ready(function(){
 
         /* Experience Page */
         $("#experience").viewportChecker(slideInRightObject);
+        $(".experience-bar").viewportChecker(visibleObject);
         $(".percent-bar").viewportChecker(slideInLeftObject);
         $(".lang-icon").viewportChecker(fadeInLeftObject);
         $(".language").viewportChecker(fadeInLeftObject);

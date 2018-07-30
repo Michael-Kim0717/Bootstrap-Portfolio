@@ -138,6 +138,7 @@ html, body {
 
     .experience-bar {
         box-shadow: 0 0 5px darkgray;
+        visibility: hidden;
     }
     
     .percent-bar {
@@ -212,7 +213,18 @@ html, body {
         }
 
         .card-text {
+            align-items: center;
             background-color: darkslategray;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .mobile-text {
+            align-items: center;
+            background-color: darkslategray;
+            display: flex;
+            justify-content: center;
             padding: 20px;
         }
 
@@ -232,13 +244,9 @@ html, body {
         }
 
         /* For Mobile Cards */
-        .card-img-bottom {
-            height: 20rem;
-            background-size: cover;
-        }
 
         .mobile-text {
-            padding: 60px 20px 20px 20px;
+            padding: 20px 20px 20px 20px;
         }
 
 /* Contact.html */
@@ -315,7 +323,6 @@ input {
         }
 
         /* Portfolio */
-
         .carousel img {
             margin-top: 50px;
             width: 80%;
@@ -334,12 +341,10 @@ input {
             text-align: center;
         }
 
-        .mobile-medium-card {
-            display: none;
-        }
-
-        .card-img-bottom {
-            height: 20rem;
+        .mobile-card-img {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
         }
 
         /* Contact */
@@ -404,18 +409,8 @@ input {
             font-size: 16px;
         }
 
-        .mobile-medium-card {
-            display: block;
-        }
-
-        .mobile-card {
-            display: none;
-        }
-
         .mobile-card-img {
-            display: block;
-            height: 15rem;
-            margin: 0 auto;
+            width: 50%;
         }
 
         /* Contact */
@@ -482,19 +477,21 @@ input {
 
         .card p {
             font-size: 17px;
+            line-height: 2.75vw;
         }
 
         .mobile-card {
             display: flex;
         }
 
-        .mobile-medium-card {
-            display: none;
+        .mobile-card-img {
+            height: 35vw; 
+            max-height: 100%;
+            max-width: 100%;
         }
 
-        .card-img-bottom {
-            height: 20rem;
-            margin-top: 60px;
+        .mobile-medium-card {
+            display: none;
         }
 
         /* Contact */
@@ -553,10 +550,42 @@ input {
             font-size: 18px;
         }
 
+        .mobile-card-img {
+            height: 35vw; 
+            max-height: 100%;
+        }
+
         /* Contact */
 
         .sm-link {
             font-size: 16px;
         }
 
+    }
+
+    @media (min-width: 1850px) {
+        .carousel-inner {
+            height: 750px;
+        }
+
+        .carousel-item {
+            height: 750px;
+        }
+
+        #project-cards {
+            height: 750px;
+        }
+
+        .carousel p {
+            font-size: 30px;
+            line-height: 3vw;
+        }
+
+        .carousel h4 {
+            font-size: 48px;
+        }
+
+        .card p {
+            font-size: 30px;
+        }
     }
