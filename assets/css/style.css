@@ -565,15 +565,15 @@ input {
 
     @media (min-width: 1850px) {
         .carousel-inner {
-            height: 750px;
+            height: 900px;
         }
 
         .carousel-item {
-            height: 750px;
+            height: 900px;
         }
 
         #project-cards {
-            height: 750px;
+            height: 900px;
         }
 
         .carousel p {

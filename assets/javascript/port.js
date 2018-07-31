@@ -32,10 +32,12 @@ $(document).ready(function(){
         type: "web",
         imageLinks: 
         ['assets/images/liri-pics/movie-this.png',
-        'assets/images/liri-pics/spotify-this.png'],
+        'assets/images/liri-pics/spotify-this.png',
+        'assets/images/liri-pics/my-tweets.png'],
         imageDesc:
-        ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!']
+        ["Giving movie-this as a command to LIRI will provide the user with details to their searched movie including the movie's name, year, ratings, countries where the movie was produced, languages that the movie is in, plot, and list of actors.",
+        "Asking LIRI to spotify-this-song with a song title will provide the user with the song's artist, title, preview link, and album.",
+        "LIRI will read out the last twenty tweets you have posted on your twitter when giving it the instructions, my-tweets sorted by the most recently posted tweets."]
     }
     var foogle = {
         type: "web",
@@ -44,9 +46,9 @@ $(document).ready(function(){
         'assets/images/foogle-pics/favorites.png',
         'assets/images/foogle-pics/details.png'],
         imageDesc:
-        ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!']
+        ['We wanted to give Foogle a Tinder-like feel where if the user likes what they see from the image and short nutritional description, they can like it to add to their favorites or dislike it to find another dish.',
+        'The favorites page is a collection of all dishes that the user has liked. Here users will be able to return to a certain dish if they liked it in the past and view it again at another time.',
+        'Since not much information can be gained from an image, clicking an image on the favorites page will give the user a more detailed listing of the dish including where to find it, its distance, whether or not the restaurant does takeout/delivery, and more.']
     }
     var geographyHangman = {
         type: "web",
@@ -77,9 +79,9 @@ $(document).ready(function(){
         'assets/images/pokemon-rpg-pics/battle-screen.png',
         'assets/images/pokemon-rpg-pics/results-screen.png'],
         imageDesc:
-        ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!']
+        ['Each Pokemon has a different set of statistics (generated randomly) with some Pokemon excelling at one statistic more than the others. Making the choice of who to start with along with the order of who to battle is highly important.',
+        "Each time the user attacks, the starter Pokemon's attack will increase by its base attack, while the enemy will strike with consistent damage. Being able to stack your attack value wisely will make or break the outcome of the battles.",
+        'Every Pokemon has a chance in victory, however the choices that the user makes will determine the outcome of the rest of the game.']
     }
     var passwordJournal = {
         type: "mob",
@@ -88,9 +90,9 @@ $(document).ready(function(){
         'assets/images/password-pics/details.png',
         'assets/images/password-pics/pin.png'],
         imageDesc:
-        ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!']
+        ["The home page shows a list of user entered accounts in alphabetical order that may be viewed upon entering the user's PIN number.",
+        "A simple details page will provide the user with the account's title, username, and password.",
+        'The settings screen gives the user the option to add a new PIN number or edit their current PIN number. This PIN number is what the user will enter in to view any of their entered accounts.']
     }
     var byg = {
         type: "mob",
@@ -100,10 +102,10 @@ $(document).ready(function(){
         'assets/images/byg-pics/logs.png',
         'assets/images/byg-pics/response-cards.png'],
         imageDesc:
-        ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!']
+        ['The goal for this page is to allow staff to update the announcements on a weekly basis so that all students will be able to view them upon entering the application.',
+        "A page only for the staff that allows each teacher to view a list of their current students. General staff will be able to view a list of all students from each grade.",
+        "Usually a weekly task performed by teachers using a Google Form, logs are a way for teachers to keep track of the progression of students.",
+        'A method of students being able to reach out to staff on Sundays exclusively, this page on the application aims to provide a 24/7 communication bridge between staff and students.']
     }
     var budgetWallet = {
         type: "mob",
@@ -113,10 +115,10 @@ $(document).ready(function(){
         'assets/images/budget-pics/transactions.png',
         'assets/images/budget-pics/statistics.png'],
         imageDesc:
-        ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!',
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas obcaecati, fugit quae, dolorum vero sit corrupti adipisci expedita reprehenderit quasi ex molestiae nostrum? Corrupti, fugiat asperiores unde doloremque voluptas commodi!']
+        ["As the hub for the user to add transactions, users can easily map where their money goes, account by account.",
+        "For anyone with multiple methods of payment, this application aims to help users manually keep track of balances across all accounts.",
+        "With access to viewing transactions across any and all accounts, the user is able to view transaction details over the course of their spending period.",
+        "The statistics screen is mainly here to show minor statistics about where the user's money is going including largest payments, money spent overall, and place that the most money was spent at."]
     }
 
         /* About Page */
