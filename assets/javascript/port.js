@@ -207,6 +207,14 @@ $(document).ready(function(){
         // Add pictures and descriptions for the project.
         $(".carousel-inner").empty();
         switch (selectedProject) {
+            case 'word-guess-node' :
+                $(".carousel-indicators").empty();
+                $(".carousel-inner").append(
+                    "<div class='carousel-item active'>" +
+                        "<h4> Nothing to see here yet :( </h4>" +
+                    "</div>"
+                );
+                break;
             case 'liri' :
                 addCarousel(liri);
                 break;
