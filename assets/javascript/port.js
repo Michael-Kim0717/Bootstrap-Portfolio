@@ -207,22 +207,6 @@ $(document).ready(function(){
         // Add pictures and descriptions for the project.
         $(".carousel-inner").empty();
         switch (selectedProject) {
-            case 'friend-finder' :
-                $(".carousel-indicators").empty();
-                $(".carousel-inner").append(
-                    "<div class='carousel-item active'>" +
-                        "<h4> Nothing to see here yet :( </h4>" +
-                    "</div>"
-                );
-                break;
-            case 'word-guess-node' :
-                $(".carousel-indicators").empty();
-                $(".carousel-inner").append(
-                    "<div class='carousel-item active'>" +
-                        "<h4> Nothing to see here yet :( </h4>" +
-                    "</div>"
-                );
-                break;
             case 'liri' :
                 addCarousel(liri);
                 break;
@@ -248,6 +232,12 @@ $(document).ready(function(){
                 addCarousel(budgetWallet);
                 break;    
             default :
+                $(".carousel-indicators").empty();
+                $(".carousel-inner").append(
+                    "<div class='carousel-item active'>" +
+                        "<h4> Nothing to see here yet :( </h4>" +
+                    "</div>"
+                );
                 break;
         }
         
