@@ -28,17 +28,6 @@ $(document).ready(function(){
     };
 
     /* Objects for clicking on projects */
-    var liri = {
-        type: "web",
-        imageLinks: 
-        ['assets/images/liri-pics/movie-this.png',
-        'assets/images/liri-pics/spotify-this.png',
-        'assets/images/liri-pics/my-tweets.png'],
-        imageDesc:
-        ["Giving movie-this as a command to LIRI will provide the user with details to their searched movie including the movie's name, year, ratings, countries where the movie was produced, languages that the movie is in, plot, and list of actors.",
-        "Asking LIRI to spotify-this-song with a song title will provide the user with the song's artist, title, preview link, and album.",
-        "LIRI will read out the last twenty tweets you have posted on your twitter when giving it the instructions, my-tweets sorted by the most recently posted tweets."]
-    }
     var foogle = {
         type: "web",
         imageLinks:
@@ -49,28 +38,6 @@ $(document).ready(function(){
         ['We wanted to give Foogle a Tinder-like feel where if the user likes what they see from the image and short nutritional description, they can like it to add to their favorites or dislike it to find another dish.',
         'The favorites page is a collection of all dishes that the user has liked. Here users will be able to return to a certain dish if they liked it in the past and view it again at another time.',
         'Since not much information can be gained from an image, clicking an image on the favorites page will give the user a more detailed listing of the dish including where to find it, its distance, whether or not the restaurant does takeout/delivery, and more.']
-    }
-    var geographyHangman = {
-        type: "web",
-        imageLinks:
-        ['assets/images/word-guess-game-pics/start-screen.png',
-        'assets/images/word-guess-game-pics/in-game-screen.png',
-        'assets/images/word-guess-game-pics/loss-screen.png'],
-        imageDesc:
-        ['A short and simple hangman-esque game that uses keypress listeners to listen to user input.',
-        'Users have 5 chances to guess the given country. For every right letter, it will populate the corresponding values and for every wrong letter, lower the amount of guesses they have.',
-        'For every correct answer, you will continue a streak for correct answers. For each loss, you will break this streak and will have to start over.']
-    }
-    var speedTrivia = {
-        type: "web",
-        imageLinks:
-        ['assets/images/speed-trivia-pics/home-screen.png',
-        'assets/images/speed-trivia-pics/in-game-screen.png',
-        'assets/images/speed-trivia-pics/results-screen.png'],
-        imageDesc:
-        ['A quick 10 question quiz that uses intervals that tests the users knowledge in topics such as Science, History, Sports, Geography, and more.',
-        "With 10 seconds to answer each question, the user's main goal is to answer each question accurately and swiftly in order to beat their own high score.",
-        'Users will be able to see how many questions were correct, incorrect, and unanswered. Upon restarting the quiz, users will continuously be prompted with a set of 10 new questions.']
     }
     var pokemonRPG = {
         type: "web",
@@ -107,20 +74,7 @@ $(document).ready(function(){
         "Usually a weekly task performed by teachers using a Google Form, logs are a way for teachers to keep track of the progression of students.",
         'A method of students being able to reach out to staff on Sundays exclusively, this page on the application aims to provide a 24/7 communication bridge between staff and students.']
     }
-    var budgetWallet = {
-        type: "mob",
-        imageLinks:
-        ['assets/images/budget-pics/home.png',
-        'assets/images/budget-pics/methods.png',
-        'assets/images/budget-pics/transactions.png',
-        'assets/images/budget-pics/statistics.png'],
-        imageDesc:
-        ["As the hub for the user to add transactions, users can easily map where their money goes, account by account.",
-        "For anyone with multiple methods of payment, this application aims to help users manually keep track of balances across all accounts.",
-        "With access to viewing transactions across any and all accounts, the user is able to view transaction details over the course of their spending period.",
-        "The statistics screen is mainly here to show minor statistics about where the user's money is going including largest payments, money spent overall, and place that the most money was spent at."]
-    }
-
+    
         /* About Page */
         $("#about-me").viewportChecker(slideInLeftObject);
         $(".intro").viewportChecker(slideInRightObject);
@@ -207,17 +161,8 @@ $(document).ready(function(){
         // Add pictures and descriptions for the project.
         $(".carousel-inner").empty();
         switch (selectedProject) {
-            case 'liri' :
-                addCarousel(liri);
-                break;
             case 'foogle' :
                 addCarousel(foogle);
-                break;
-            case "geography-hangman" :
-                addCarousel(geographyHangman);
-                break;
-            case "speed-trivia" :
-                addCarousel(speedTrivia);
                 break;
             case "pokemon-rpg" :
                 addCarousel(pokemonRPG);
@@ -228,9 +173,6 @@ $(document).ready(function(){
             case 'BYG' :
                 addCarousel(byg);
                 break;
-            case 'budget-wallet' :
-                addCarousel(budgetWallet);
-                break;    
             default :
                 $(".carousel-indicators").empty();
                 $(".carousel-inner").append(
