@@ -28,6 +28,17 @@ $(document).ready(function(){
     };
 
     /* Objects for clicking on projects */
+    var techInSchools = {
+        type: "web",
+        imageLinks:
+        ['assets/images/tech-in-schools-pics/attendance.png',
+        'assets/images/tech-in-schools-pics/agenda.png',
+        'assets/images/tech-in-schools-pics/behavior.png'],
+        imageDesc:
+        ['As a teacher, taking attendance multiple times a day, every day during the week gets tedious. Teachers utilize this page to easily record student attendance for each of their classes.',
+        'For teachers to make the most out of their day, teachers are given this tool to record their plans for the day, week, or month by providing details to how they will teach their upcoming classes.',
+        'For parents that are curious to how their students are doing during school, teachers are given the opportunity to record any negative action done by a student in which the parent will eventually be able to see.']
+    }
     var foogle = {
         type: "web",
         imageLinks:
@@ -161,6 +172,9 @@ $(document).ready(function(){
         // Add pictures and descriptions for the project.
         $(".carousel-inner").empty();
         switch (selectedProject) {
+            case 'techInSchools' :
+                addCarousel(techInSchools);
+                break;
             case 'foogle' :
                 addCarousel(foogle);
                 break;
