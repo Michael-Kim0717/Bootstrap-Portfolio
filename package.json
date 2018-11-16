@@ -1,20 +1,25 @@
 {
-  "name": "michael-kim-portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Michael-Kim0717/Bootstrap-Portfolio.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Michael Kim",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Michael-Kim0717/Bootstrap-Portfolio/issues"
-  },
-  "homepage": "https://github.com/Michael-Kim0717/Bootstrap-Portfolio#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
