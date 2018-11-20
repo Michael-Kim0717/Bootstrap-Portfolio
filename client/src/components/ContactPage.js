@@ -11,18 +11,14 @@ class Contact extends Component {
     }
 
     sendMail = () => {
-        axios.post('/send', {
-            name: "Jeff"
-            /* name: this.state.name,
+        const contact = {
+            name: this.state.name,
             email: this.state.email,
-            message: this.state.message */
-        })
-        .then(function(response){
-            console.log(response);
-        })
-        .catch(function (error){
-            console.log(error); 
-        })
+            message: this.state.message
+        }
+        console.log(contact)
+
+        axios.post('/api/send', contact);
     }
 
     nameChange = (event) => {
@@ -40,7 +36,7 @@ class Contact extends Component {
     render() { 
         return (  
             <div className="row">
-                {/* <form 
+                <form 
                     className="col s6 offset-s3" 
                     style={styles.form} 
                 >
@@ -77,9 +73,9 @@ class Contact extends Component {
                             onChange={this.messageChange} 
                             value={this.state.message} />
                         <label htmlFor="message"> Message </label>
-                    </div> */}
+                    </div>
                     <button className="btn" style={styles.submitButton} onClick={this.sendMail}> Send :) </button>
-                {/* </form> */}
+                </form>
             </div>
         );
     }
